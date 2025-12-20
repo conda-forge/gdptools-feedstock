@@ -87,6 +87,7 @@ tests:
       run:
         - pytest
         - nbclient
+        - libgdal-hdf5
     script:
       - gdptools --help
       - pytest tests
