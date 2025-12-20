@@ -7,7 +7,7 @@ Home: https://code.usgs.gov/wma/nhgf/toolsteam/gdptools
 
 Package license: Unlicense
 
-Summary: Gdptools
+Summary: Tools for GeoData Portal polygon-to-polygon intersections.
 
 Current build status
 ====================
