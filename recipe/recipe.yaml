@@ -33,6 +33,8 @@ requirements:
     - python >=${{ python_min }}
     - bottleneck >=1.3.3
     - dask-core >2024.8.0
+    # dask-distributed
+    - distributed
     - dask-geopandas >0.4.1
     - fastparquet >=2024.2,<=2024.5
     - geopandas >=0.13.0
@@ -40,7 +42,7 @@ requirements:
     - netcdf4 >=1.5.8
     - numpy >2.0
     - pandas >=2.0.0
-    - pyarrow >=10.0.0,<18.0.0
+    - pyarrow >=10.0.0
     - pydantic >=2
     - pyproj >=3.3.0
     - pystac >=1.10,<2.0
