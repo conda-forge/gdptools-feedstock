@@ -1,11 +1,11 @@
---- gdptools-0.3.1.orig/pyproject.toml	1969-12-31 21:00:00.000000000 -0300
-+++ gdptools-0.3.1/pyproject.toml	2025-12-20 09:25:24.996883566 -0300
-@@ -54,7 +54,7 @@
- statsmodels = ">=0.14,<1.0"
- tqdm = "^4.66.2"
- fastparquet = ">=2024.2,<=2024.5"
--pyarrow = ">=10.0.0,<18.0.0"
-+pyarrow = ">=10.0.0"
- s3fs = "^2025.2.0"
- click = ">=8.1,<9"
- urllib3 = ">=2.6.0"  # CVE-2025-66418, CVE-2025-66471
+--- gdptools-0.3.2.orig/pyproject.toml
++++ gdptools-0.3.2/pyproject.toml
+@@ -44,7 +44,7 @@
+     "statsmodels>=0.14,<1.0",
+     "tqdm>=4.66.2",
+     "fastparquet>=2024.2,<=2024.5",
+-    "pyarrow>=10.0.0,<18.0.0",
++    "pyarrow>=10.0.0",
+     "s3fs>=2025.2.0",
+     "click>=8.1,<9",
+     "urllib3>=2.6.0",  # CVE-2025-66418, CVE-2025-66471
