@@ -1,6 +1,7 @@
 --- a/pyproject.toml
 +++ b/pyproject.toml
-@@ -28,14 +28,14 @@ dependencies = [
+@@ -30,17 +30,17 @@
+     "geopandas>=0.13.0",
      "shapely>=2.0",
      "pyproj>=3.3.0",
 -    "xarray>=2024.7.0,<2025.0.0",
@@ -28,3 +29,4 @@
      "s3fs>=2025.2.0",
      "click>=8.1,<9",
      "urllib3>=2.6.0",  # CVE-2025-66418, CVE-2025-66471
+     "exactextract>=0.3.0",
