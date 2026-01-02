@@ -1,6 +1,6 @@
---- gdptools-0.3.3.orig/pyproject.toml	2020-02-01 21:00:00.000000000 -0300
-+++ gdptools-0.3.3/pyproject.toml	2026-01-02 12:00:00.000000000 -0300
-@@ -28,14 +28,14 @@
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -28,14 +28,14 @@ dependencies = [
      "shapely>=2.0",
      "pyproj>=3.3.0",
 -    "xarray>=2024.7.0,<2025.0.0",
