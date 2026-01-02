@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 0.3.2
+  version: 0.3.3
   python_max_check: '3.13'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gdptools/gdptools-${{ version }}.tar.gz
-  sha256: 710196ded476b2417fd2dc046252e7ab6c6950acab4c27bec9d94677e47af70d
+  sha256: ca7862e31cda8c02b1c82928f0423fb74c5cd05e8c87ccfdcc05c222943cd67f
   patches:
     - pyarrow_unpin.patch
 
@@ -32,11 +32,9 @@ requirements:
     - click >=8.1,<9
     - python >=${{ python_min }}
     - bottleneck >=1.3.3
-    - dask-core >2024.8.0
-    # dask-distributed
-    - distributed
+    - dask >2024.8.0
     - dask-geopandas >0.4.1
-    - fastparquet >=2024.2,<=2024.5
+    - fastparquet >=2024.2
     - geopandas >=0.13.0
     - joblib >=1.4.0
     - netcdf4 >=1.5.8
@@ -44,17 +42,18 @@ requirements:
     - pandas >=2.0.0
     - pyarrow >=10.0.0
     - pydantic >=2
-    - pyproj >=3.3.0
-    - pystac >=1.10,<2.0
-    - rasterio >=1.2.9,<1.5.0
-    - rioxarray >=0.15,<0.21
+    - pyproj >=3.7.2
+    - pystac >=1.10
+    - rasterio >=1.2.9
+    - rioxarray >=0.15
     - s3fs >=2025.2.0
     - shapely >=2.0
-    - statsmodels >=0.14,<1.0
+    - statsmodels >=0.14
     - tqdm >=4.66.2
-    - xarray >=2024.7.0,<2025.0.0
+    - xarray >=2024.7.0
     - zarr >=2.12.0
     - urllib3 >=2.6.0
+    - exactextract >=0.3.0
 tests:
   - python:
       imports:
