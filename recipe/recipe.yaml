@@ -42,7 +42,7 @@ requirements:
     - pandas >=2.0.0
     - pyarrow >=10.0.0
     - pydantic >=2
-    - pyproj >=3.3.0
+    - pyproj >=3.7.2
     - pystac >=1.10
     - rasterio >=1.2.9
     - rioxarray >=0.15
