@@ -12,8 +12,8 @@ package:
 source:
   url: https://pypi.org/packages/source/g/gdptools/gdptools-${{ version }}.tar.gz
   sha256: d4ac671df627430c3e781df037d4e89c3381d071937bb70c7f12752b86916bdb
-  patches:
-    - pyarrow_unpin.patch
+  # patches:
+  #   - pyarrow_unpin.patch
 
 build:
   number: 0
