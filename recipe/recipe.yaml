@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   version: 0.3.7
-  python_max_check: '3.13'
+  python_min: "3.11"
 
 package:
   name: gdptools
@@ -12,8 +12,6 @@ package:
 source:
   url: https://pypi.org/packages/source/g/gdptools/gdptools-${{ version }}.tar.gz
   sha256: fd75ccb1106593fe082169ef69372bd1410f657d31516cf3c3add4f2e7a8088f
-  # patches:
-  #   - pyarrow_unpin.patch
 
 build:
   number: 0
@@ -61,7 +59,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - ${{ python_max_check }}.*
+        - "*"
   - files:
       source:
         - tests
