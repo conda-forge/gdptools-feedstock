@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 0.3.6
+  version: 0.3.8
   python_max_check: '3.13'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gdptools/gdptools-${{ version }}.tar.gz
-  sha256: d4ac671df627430c3e781df037d4e89c3381d071937bb70c7f12752b86916bdb
+  sha256: 590fea5f5c4a4f65d2db396b2416b3bf2f89b99f5310be844ec8abc9ce5d6d26
   # patches:
   #   - pyarrow_unpin.patch
 
@@ -53,7 +53,7 @@ requirements:
     - zarr >=2.12.0
     - urllib3 >=2.6.0
     - exactextract >=0.3.0
-    - dask >2024.8.0
+    - dask-core >2024.8.0
 tests:
   - python:
       imports:
