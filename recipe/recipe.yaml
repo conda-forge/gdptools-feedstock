@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   python_min: 3.11
-  version: 0.3.11
+  version: 0.3.12
 
 package:
   name: gdptools
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gdptools/gdptools-${{ version }}.tar.gz
-  sha256: 9102f9ed2e23f90b16dc51771063d45ac555f858703837560dad0012e2c16b2e
+  sha256: 4ea291beb948af7afb5a792b36e788471b607b5f0f17caf454f6966238ec5868
 
 build:
   number: 0
@@ -52,8 +52,6 @@ requirements:
     - urllib3 >=2.6.0
     - exactextract >=0.3.0
     - dask-core >2024.8.0
-    - distributed
-
 tests:
   - python:
       imports:
