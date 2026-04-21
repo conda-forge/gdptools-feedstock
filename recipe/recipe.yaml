@@ -52,6 +52,8 @@ requirements:
     - urllib3 >=2.6.0
     - exactextract >=0.3.0
     - dask-core >2024.8.0
+    - distributed
+
 tests:
   - python:
       imports:
