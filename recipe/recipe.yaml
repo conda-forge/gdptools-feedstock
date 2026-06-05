@@ -68,6 +68,7 @@ tests:
         - pytest
         - nbclient
         - libgdal-hdf5
+        - distributed
     script:
       - gdptools --help
       - pytest tests
