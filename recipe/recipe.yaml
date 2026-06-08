@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   python_min: '3.11'
-  version: 0.3.14
+  version: "0.3.15"
 
 package:
   name: gdptools
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gdptools/gdptools-${{ version }}.tar.gz
-  sha256: 981b82a21eb76049a18e28df6c5175256a79a1a32c94771ec762529b4132ccca
+  sha256: f58eaa29a8b779cba315eabcb67c86b573404481458f524979dcc3c02c6bcaec
 
 build:
   number: 0
