@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   python_min: '3.11'
-  version: "0.3.15"
+  version: "0.4.0"
 
 package:
   name: gdptools
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gdptools/gdptools-${{ version }}.tar.gz
-  sha256: f58eaa29a8b779cba315eabcb67c86b573404481458f524979dcc3c02c6bcaec
+  sha256: 7e1c221b6d9c0a564e336156d5e4c3fe226032b563f118864d34c4c53c5276a5
 
 build:
   number: 0
@@ -71,7 +71,13 @@ tests:
         - distributed
     script:
       - gdptools --help
-      - pytest tests
+      # test_release_metadata.py and test_version_consistency.py are
+      # repository-hygiene tests: they assert on code.json, DISCLAIMER.md,
+      # docs/_config.yml and .bumpversion.cfg, none of which the sdist ships,
+      # so they cannot pass against an installed package. Fixed upstream to
+      # skip themselves outside a source checkout (gdptools issue #112);
+      # remove these ignores once this feedstock moves past that release.
+      - pytest tests --ignore=tests/test_release_metadata.py --ignore=tests/test_version_consistency.py
 
 about:
   summary: Tools for GeoData Portal polygon-to-polygon intersections.
