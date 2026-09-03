@@ -71,7 +71,13 @@ tests:
         - distributed
     script:
       - gdptools --help
-      - pytest tests
+      # test_release_metadata.py and test_version_consistency.py are
+      # repository-hygiene tests: they assert on code.json, DISCLAIMER.md,
+      # docs/_config.yml and .bumpversion.cfg, none of which the sdist ships,
+      # so they cannot pass against an installed package. Fixed upstream to
+      # skip themselves outside a source checkout (gdptools issue #112);
+      # remove these ignores once this feedstock moves past that release.
+      - pytest tests --ignore=tests/test_release_metadata.py --ignore=tests/test_version_consistency.py
 
 about:
   summary: Tools for GeoData Portal polygon-to-polygon intersections.
